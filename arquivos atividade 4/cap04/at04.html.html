@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Recursos Multimídia — Cap. 4 / Ativ. 4</title>
+</head>
+<body>
+
+  <header>
+    <h1>Recursos Multimídia em HTML</h1>
+    <p>Exemplos de uso de vídeo, áudio, iframe e imagens responsivas.</p>
+  </header>
+
+  <main>
+
+    <!-- Bloco 1 -->
+    <section>
+      <h2>Bloco 1 — Vídeo com legenda e poster</h2>
+
+      <figure>
+        <video
+          controls
+          width="800"
+          height="450"
+          poster="poster-aula.jpg"
+          preload="metadata"
+        >
+          <source src="videos/aula-html.mp4" type="video/mp4">
+          <source src="videos/aula-html.webm" type="video/webm">
+
+          <track
+            kind="subtitles"
+            srclang="pt"
+            label="Português"
+            src="legendas/aula-html.vtt"
+            default
+          >
+
+          <p>
+            Seu navegador não suporta vídeos em HTML5.
+            <a href="videos/aula-html.mp4">
+              Clique aqui para baixar o vídeo.
+            </a>
+          </p>
+        </video>
+
+        <figcaption>
+          Aula introdutória sobre HTML5 e estrutura básica de páginas web.
+          Fonte: Material educacional do curso de Sistemas de Informação.
+        </figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- Bloco 2 -->
+    <section>
+      <h2>Bloco 2 — Áudio com fallback</h2>
+
+      <figure>
+        <audio controls preload="metadata">
+          <source src="audios/podcast-web.mp3" type="audio/mpeg">
+          <source src="audios/podcast-web.ogg" type="audio/ogg">
+
+          <p>
+            Seu navegador não suporta áudio em HTML5.
+            <a href="audios/podcast-web.mp3">
+              Clique aqui para baixar o áudio.
+            </a>
+          </p>
+        </audio>
+
+        <figcaption>
+          Podcast: Introdução ao Desenvolvimento Web —
+          <a href="transcricao.html">Ler transcrição</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- Bloco 3 -->
+    <section>
+      <h2>Bloco 3 — Vídeo externo (YouTube)</h2>
+
+      <figure>
+        <iframe
+          width="800"
+          height="450"
+          src="https://www.youtube.com/watch?v=V1qattoB_-s"
+          title="Curso de HTML5 para iniciantes em português"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+        <figcaption>
+         Reclamação: eu não consigo usar o nocookie, ou ele não está pegando no meu nootbook, então eu utilizei o youtube normal
+        </figcaption>
+        <figcaption>
+         
+          Vídeo: O que eu aprendi usando Linux —
+          Canal: Dramilos —
+          Plataforma: YouTube
+        </figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- Bloco 4 -->
+    <section>
+      <h2>Bloco 4 — Imagem responsiva com picture</h2>
+
+      <figure>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="img/banner-wide.jpg"
+          >
+
+          <img
+            src="img/banner-mobile.jpg"
+            alt="Banner ilustrando tecnologias de desenvolvimento web"
+            width="800"
+            height="450"
+          >
+        </picture>
+
+        <figcaption>
+          Banner promocional representando tecnologias modernas de
+          desenvolvimento web em diferentes dispositivos.
+        </figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <hr>
+    <p>Nome: Lázaro Nunes Faria Costa</p>
+    <p>Matrícula: 2026307356</p>
+    <p>Data: 21/05/2026</p>
+  </footer>
+
+<p>
+    <a href="arquivos atividade 4\index.html.html">← Voltar à página principal</a>
+  </p>
+
+</body>
+</html>
